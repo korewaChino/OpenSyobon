@@ -36,3 +36,5 @@ joyconfig.h in the src directory for more information.
 ## Unimplemented (Todo)
 
 - Font thickness (Really not important)
+- Unhardcode game assets
+- Keybindings
