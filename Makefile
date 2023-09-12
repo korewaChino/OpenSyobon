@@ -1,8 +1,8 @@
 CC=gcc
 LD=lld
 PREFIX=/usr/local
-CFLAGS=-Wall -g -O2
-LIBS=-lSDL -lSDL_gfx -lSDL_image -lSDL_mixer -lSDL_ttf -lm -lstdc++
+CFLAGS=-Wall -g -O2 `sdl-config --libs --cflags`
+LIBS=-lSDL_gfx -lSDL_image -lSDL_mixer -lSDL_ttf -lm -lstdc++
 SyobonAction:main.o loadg.o DxLib.o
 	${CC} main.o loadg.o DxLib.o -o SyobonAction ${LIBS} ${CFLAGS}
 main.o:main.cpp
