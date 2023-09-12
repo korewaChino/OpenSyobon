@@ -1248,8 +1248,9 @@ void Mainprogram()
 	}
 
 	if (mkeytm <= 0) {
-	    if (CheckHitKey(KEY_INPUT_Z) == 1 || CheckHitKey(KEY_INPUT_UP) == 1
-		|| SDL_JoystickGetButton(joystick, JOYSTICK_JUMP)) {
+	    if (CheckHitKey(KEY_INPUT_Z) == 1 || CheckHitKey(KEY_INPUT_UP) == 1 /* || CheckHitKey(KEY_INPUT_SPACE) == 1 */
+		|| SDL_JoystickGetButton(joystick, JOYSTICK_JUMP)
+		) {
 		if (actaon[1] == 10) {
 		    actaon[1] = 1;
 		    xx[0] = 1;
