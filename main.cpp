@@ -10635,11 +10635,11 @@ void ayobi(int xa, int xb, int xc, int xd, int xnotm, int xtype,
 	    anobib[aco] = any[atype[aco]];
 
 //大砲音
-	    if (xtype == 7 && CheckSoundMem(oto[10]) == 0) {
+	if (xtype == 7 && !CheckSoundMem(oto[10])) {
 		ot(oto[10]);
 	    }
 //ファイア音
-	    if (xtype == 10 && CheckSoundMem(oto[18]) == 0) {
+	if (xtype == 10 && !CheckSoundMem(oto[18])) {
 		ot(oto[18]);
 	    }
 
